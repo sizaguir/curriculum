@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
 </head>
 
 <body>
@@ -14,6 +13,14 @@ initial-scale=1.0">
         <h1>Tu Nombre</h1>
         <p>Tu Cargo | Tu Email | Tu Teléfono</p>
     </header>
+
+    <!--Imagen de Perfil-->
+    <section aria-label="Imagen de perfil">
+        <h2 class="subtitle">Imagen de perfil</h2>
+        <img id="photo" src="https://picsum.photos/600/400" alt="Imagen de ejemplo de Picsum" width="600"
+            height="400" />
+    </section>
+
     <nav>
         <ul>
             <li><a href="#resumen">Resumen</a></li>
@@ -25,24 +32,24 @@ initial-scale=1.0">
     </nav>
     <main>
         <section id="resumen">
-            <h2>Resumen</h2>
+            <h2 class="subtitle">Resumen</h2>
             <p>Breve descripción de tus habilidades y experiencia.</p>
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
         </section>
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 class="subtitle">Proyectos</h2>
         </section>
 
         <section id="testimonios">
-            <h2>Testimonios</h2>
+            <h2 class="subtitle">Testimonios</h2>
 
             <article class="testimonio">
                 <blockquote>
@@ -78,12 +85,12 @@ initial-scale=1.0">
                     cualquier equipo.</p>
             </article>
         </section>
-        <h2> Sitio Web Personal </h2>
+        <h2 class="subtitle"> Sitio Web Personal </h2>
         <!--parrafo con un enlace -->
         <p>Visita mi <a href="https://www.ejemplo.com" target="_blank">sitio web personal</a> para más información.</p>
 
         <!--lista ordenada de elementos -->
-        <h2> Lista Ordenada de elementos </h2>
+        <h2 class="subtitle"> Lista Ordenada de elementos </h2>
         <ol>
             <li>Primer elemento</li>
             <li>Segundo elemento</li>
@@ -91,7 +98,7 @@ initial-scale=1.0">
         </ol>
 
         <!-- Una lista no ordenada de elementos: -->
-        <h2> Lista No Ordenada de elementos </h2>
+        <h2 class="subtitle"> Lista No Ordenada de elementos </h2>
 
         <ul>
             <li>Elemento sin orden</li>
@@ -100,7 +107,7 @@ initial-scale=1.0">
         </ul>
 
         <!--Una tabla sin bordes-->
-        <h2> Tabla de elementos </h2>
+        <h2 class="subtitle"> Tabla de elementos </h2>
 
         <table style="border-collapse: collapse; width: 100%;">
             <thead>
@@ -131,7 +138,7 @@ initial-scale=1.0">
 
         <!--Mapa google maps-->
         <section aria-label="Mapa de ubicación">
-            <h2>Ubicación</h2>
+            <h2 class="subtitle">Ubicación</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0198865810847!2d-122.41941548468126!3d37.77492977975995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c2c5f4a43%3A0xc8b4b9e4740a0b66!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1696600000000!5m2!1sen!2sus"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -141,13 +148,14 @@ initial-scale=1.0">
 
         <!--Imagen-->
         <section aria-label="Imagen de muestra">
-            <h2>Imagen de muestra</h2>
-            <img src="https://picsum.photos/600/400" alt="Imagen de ejemplo de Picsum" width="600" height="400" />
+            <h2 class="subtitle">Imagen de muestra</h2>
+            <img id="photo" src="https://picsum.photos/600/400" alt="Imagen de ejemplo de Picsum" width="600"
+                height="400" />
         </section>
 
         <!--Video YT-->
         <section aria-label="Video de presentación">
-            <h2>Video de presentación</h2>
+            <h2 class="subtitle">Video de presentación</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de YouTube"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -158,7 +166,7 @@ initial-scale=1.0">
         <!--Formulario-->
 
         <section aria-label="Formulario de contacto">
-            <h2>Contáctame</h2>
+            <h2 class="subtitle">Contáctame</h2>
 
             <form action="/enviar-formulario" method="post">
 
@@ -203,27 +211,19 @@ initial-scale=1.0">
             </form>
         </section>
 
-
-
-
-
-
-
-
-
         <!-- Resto del sitio (ejemplo) -->
         <section id="sobre-mi">
-            <h2>Sobre mí</h2>
+            <h2 class="subtitle">Sobre mí</h2>
             <p>Descripción breve sobre tu experiencia, habilidades y carrera.</p>
         </section>
 
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
             <p>Detalles sobre tu historial laboral, roles anteriores, y logros clave.</p>
         </section>
 
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <p>Información para contactar contigo.</p>
         </section>
 
