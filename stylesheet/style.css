@@ -1,53 +1,222 @@
-/* Aplica la fuente a todos los elementos */
-* {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+/* Estilos globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto oscuro para buena legibilidad */
+    margin: 20;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px; /* Tamaño de fuente más pequeño y cómodo */
 }
 
-#photo {
-
-    /* Ancho del elemento */
-    width: 8vw;
-
-    /* Alto del elemento */
-    height: auto;
-}
-
-.subtitle {
-
-    /* Color del texto en rgba */
-    color: rgba(158, 55, 63, 0.89);
-
-    /* Transformación del texto a mayúsculas */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #3498DB; /* Azul para los encabezados */
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-section {
-
-    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
-    border: 0.2pt solid #cedddd;
-
-    /* margen (espacio externo) superior, derecho, abajo e izquierda */
-    margin: 4px 2px 8px 2px;
-
-    /* relleno (espacio interno) de
-    1.5% en la parte superior e inferior y
-    0.8% a los lados derecho e izquierdo. */
-
-    padding: 1.5% 0.8%;
-
-    /* Margen inferior ajustado */
-    margin-bottom: 1.2rem;
-
+h1 {
+    font-size: 2rem; /* Ajustado a un tamaño más amigable */
+    margin-bottom: 20px;
 }
 
-section {
-   /* borde redondeado con un radio de 5 píxeles */
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
+h2 {
+    font-size: 1.75rem; /* Tamaño más moderado */
+    margin-bottom: 10px;
+}
 
-   /* sombra a un elemento */
-   -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+h3 {
+    font-size: 1.25rem;
+}
+
+/* Estilo del header */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-bottom: 1px solid #ddd; /* Línea de separación */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #3498DB; /* Azul */
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #7f8c8d; /* Gris suave */
+}
+
+/* Enlaces y navegación */
+nav {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-bottom: 1px solid #ddd; /* Línea de separación */
+}
+
+nav > ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #3498DB;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #E74C3C; /* Rojo para resaltar el hover */
+}
+
+/* Estilo para las secciones */
+section {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    background-color: #f9f9f9; /* Fondo gris muy claro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Testimonios */
+.testimonio blockquote {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.testimonio cite {
+    grid-column: 1 / -1;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Esquinas redondeadas en las imágenes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; /* Fondo blanco para las tablas */
+    border-radius: 8px; /* Esquinas redondeadas */
+    overflow: hidden; /* Para asegurar que las esquinas redondeadas sean visibles */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Línea sutil entre filas */
+}
+
+th {
+    background-color: #f1f1f1; /* Fondo muy claro para los encabezados */
+    color: #3498DB;
+}
+
+td {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Formularios */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #333333;
+}
+
+form input[type="text"], form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px; /* Esquinas redondeadas en los campos de entrada */
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 1rem;
+}
+
+form input[type="radio"], form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #E74C3C;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #C0392B; /* Cambio de color en hover */
+}
+
+/* Pie de página */
+footer {
+    background-color: #ffffff;
+    color: #7f8c8d;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #3498DB;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #E74C3C;
+}
+
+/* Estilos de tablas y listas */
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+/* Mapa y video */
+iframe {
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
