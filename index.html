@@ -4,235 +4,470 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Currículum Vitae</title>
+    <title>Mi Curriculum Profesional | Desarrollador Web Full Stack</title>
+    <meta name="description"
+        content="Curriculum vitae profesional de desarrollador web full stack con experiencia en React, Node.js, TypeScript y tecnologías modernas">
+    <meta name="author" content="Sofía Paola Izaguirre Durán">
     <link rel="stylesheet" href="stylesheet/style.css">
+
 </head>
 
-<body>
-    <header>
-        <h1>Tu Nombre</h1>
-        <p>Tu Cargo | Tu Email | Tu Teléfono</p>
+
+<body> <!-- HEADER CON NAVEGACIÓN -->
+    <header id="main-header">
+        <div class="header-container"> <a href="#about" class="logo">Mi Curriculum</a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#education">Educación</a></li>
+                    <li><a href="#skills">Habilidades</a></li>                    
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        </div>
     </header>
 
-    <!--Imagen de Perfil-->
-    <section aria-label="Imagen de perfil">
-        <h2 class="subtitle">Imagen de perfil</h2>
-        <img id="photo" src="https://picsum.photos/600/400" alt="Imagen de ejemplo de Picsum" width="200"
-            height="400" />
-    </section>
-
-    <nav>
-        <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-    </nav>
+    <!-- MAIN CONTENT -->
     <main>
-        <section id="resumen">
-            <h2 class="subtitle">Resumen</h2>
-            <p>Breve descripción de tus habilidades y experiencia.</p>
-        </section>
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia</h2>
-        </section>
-        <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
-        </section>
-        <section id="habilidades">
-            <h2 class="subtitle">Habilidades</h2>
-        </section>
-        <section id="proyectos">
-            <h2 class="subtitle">Proyectos</h2>
-        </section>
+        <!-- SECCIÓN SOBRE MÍ -->
+        <section id="about">
+            <div class="container">
+                <div class="about-content">
+                    <h1 class="about-title">Sofía Paola Izaguirre Durán</h1>
+                    <p class="about-subtitle">Estudiante de Computación</p>
+                    <!--Imagen de Perfil-->
+                    <section aria-label="Imagen de perfil">
+                        <img id="photo"
+                            src="https://raw.githubusercontent.com/sizaguir/curriculum/main/images/fotoperfil.jpg"
+                            alt="Foto de perfil" width="200" </section>
 
-        <section id="testimonios">
-            <h2 class="subtitle">Testimonios</h2>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span>📍</span>
+                                <span>Guayaquil, Ecuador</span>
+                            </div>
+                            <div class="contact-item">
+                                <span>✉️</span>
+                                <a href="mailto:tu@email.com" style="color: inherit;">spizagui@espol.edu.ec</a>
+                            </div>
+                        </div>
 
-            <article class="testimonio">
-                <blockquote>
-                    "Su trabajo superó nuestras expectativas, demostrando un nivel de profesionalismo y compromiso
-                    excepcional."
-                </blockquote>
-                <p><strong>María González</strong>, Gerente de Proyectos en XYZ Corp.</p>
-                <p>Trabajé con [Tu Nombre] durante más de dos años en múltiples proyectos de desarrollo web. Su
-                    capacidad para liderar equipos y entregar soluciones de calidad en plazos ajustados fue crucial para
-                    el éxito de nuestros proyectos. Su atención al detalle y habilidades de comunicación son
-                    destacables.</p>
-            </article>
+                        <div class="card">
+                            <h2>Sobre mí</h2>
+                            <p>
+                                Soy estudiante de Computación en la Escuela Superior Politécnica del Litoral (ESPOL),
+                                caracterizada por mi responsabilidad, pensamiento analítico y atención al detalle. Me
+                                interesa comprender a fondo los fundamentos detrás de cada tema, desde algoritmos y
+                                estructuras de datos hasta el desarrollo web y proyectos con enfoque social.
 
-            <article class="testimonio">
-                <blockquote>
-                    "Es una persona increíblemente talentosa y dedicada. Lo recomiendo sin reservas."
-                </blockquote>
-                <p><strong>Carlos Pérez</strong>, Director de Tecnología en ABC Solutions</p>
-                <p>Colaboramos estrechamente en el rediseño de la plataforma de software de la empresa. Su capacidad
-                    para resolver problemas complejos de forma eficiente y su enfoque en la experiencia del usuario
-                    fueron esenciales para mejorar nuestra aplicación. Su ética de trabajo es ejemplar.</p>
-            </article>
-
-            <article class="testimonio">
-                <blockquote>
-                    "Un profesional que siempre va más allá de lo esperado. Su creatividad y liderazgo son
-                    inspiradores."
-                </blockquote>
-                <p><strong>Ana López</strong>, Jefa de Marketing en Global Innovators</p>
-                <p>Tuve el privilegio de trabajar con [Tu Nombre] en varias campañas digitales. Su habilidad para
-                    integrar diseño y tecnología en las estrategias de marketing fue un punto clave en nuestros
-                    proyectos. Además, su actitud positiva y capacidad de adaptación lo hacen un miembro valioso para
-                    cualquier equipo.</p>
-            </article>
-        </section>
-        <h2 class="subtitle"> Sitio Web Personal </h2>
-        <!--parrafo con un enlace -->
-        <p>Visita mi <a href="https://www.ejemplo.com" target="_blank">sitio web personal</a> para más información.</p>
-
-        <!--lista ordenada de elementos -->
-        <h2 class="subtitle"> Lista Ordenada de elementos </h2>
-        <ol>
-            <li>Primer elemento</li>
-            <li>Segundo elemento</li>
-            <li>Tercer elemento</li>
-        </ol>
-
-        <!-- Una lista no ordenada de elementos: -->
-        <h2 class="subtitle"> Lista No Ordenada de elementos </h2>
-
-        <ul>
-            <li>Elemento sin orden</li>
-            <li>Otro elemento sin orden</li>
-            <li>Un tercer elemento</li>
-        </ul>
-
-        <!--Una tabla sin bordes-->
-        <h2 class="subtitle"> Tabla de elementos </h2>
-
-        <table style="border-collapse: collapse; width: 100%;">
-            <thead>
-                <tr>
-                    <th>Encabezado 1</th>
-                    <th>Encabezado 2</th>
-                    <th>Encabezado 3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Fila 1, Columna 1</th>
-                    <td>Fila 1, Columna 2</td>
-                    <td>Fila 1, Columna 3</td>
-                </tr>
-                <tr>
-                    <th>Fila 2, Columna 1</th>
-                    <td>Fila 2, Columna 2</td>
-                    <td>Fila 2, Columna 3</td>
-                </tr>
-                <tr>
-                    <th>Fila 3, Columna 1</th>
-                    <td>Fila 3, Columna 2</td>
-                    <td>Fila 3, Columna 3</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!--Mapa google maps-->
-        <section aria-label="Mapa de ubicación">
-            <h2 class="subtitle">Ubicación</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0198865810847!2d-122.41941548468126!3d37.77492977975995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c2c5f4a43%3A0xc8b4b9e4740a0b66!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1696600000000!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" title="Mapa de Google Maps - Ubicación">
-            </iframe>
+                            </p>
+                        </div>
+                </div>
+            </div>
         </section>
 
-        <!--Imagen-->
-        <section aria-label="Imagen de muestra">
-            <h2 class="subtitle">Imagen de muestra</h2>
-            <img id="photo" src="https://picsum.photos/600/400" alt="Imagen de ejemplo de Picsum" width="600"
-                height="400" />
+        <!-- SECCIÓN PROYECTOS -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Proyectos Destacados</h2>
+                    <p class="section-subtitle">Algunos de mis trabajos más recientes y significativos</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="card project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
+                            Proyecto Estructuras
+                        </div>
+                        <div class="project-content">
+                            <h3>Proyecto Estructuras</h3>
+                            <p class="project-description">
+                                Proyecto que contiene código fuente sobre una aplicación de vuelos de un Aeropuerto, el
+                                cual contene información de aerolineas disponibles y vuelos asignados a cada aerolinea y
+                                aeropuerto.
+                            </p>
+                            <div class="badge-container">
+                                <span class="badge">Java</span>
+                                <span class="badge">NetBeans</span>
+                                <span class="badge">SceneBuilder</span>
+                                <span class="badge">JavaFXML</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://example.com" target="_blank" class="btn btn-primary">
+                                    🔗 Ver Demo
+                                </a>
+                                <a href="https://github.com/sizaguir/ProyectoEstructuras.git" target="_blank"
+                                    class="btn btn-outline">
+                                    💻 Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #10b981, #14b8a6);">
+                            Proyecto Base de Datos
+                        </div>
+                        <div class="project-content">
+                            <h3>Proyecto Base de Datos</h3>
+                            <p class="project-description">
+                                Proyecto que contiene un sistema similar al de Aula Virtual el cual está conectado a una
+                                base de datos con la información de estudiantes, docentes y personal administrativo de
+                                la Universidad.
+                            </p>
+                            <div class="badge-container">
+                                <span class="badge">Python</span>
+                                <span class="badge">Visual Studio Code</span>
+                                <span class="badge">MySQL</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://example.com" target="_blank" class="btn btn-primary">
+                                    🔗 Ver Demo
+                                </a>
+                                <a href="https://github.com/sizaguir/ProyectoBasedeDatos.git" target="_blank"
+                                    class="btn btn-outline">
+                                    💻 Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">
+                            Proyecto Matemáticas Discretas
+                        </div>
+                        <div class="project-content">
+                            <h3>Proyecto Matemáticas Discretas</h3>
+                            <p class="project-description">
+                                Proyecto que describe el uso y funcionalidad del argoritmo RSA que está estrechamente
+                                relacionado con la materia de matemáticas discretass.
+                            </p>
+                            <div class="badge-container">
+                                <span class="badge">Tkinter</span>
+                                <span class="badge">Python/span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://example.com" target="_blank" class="btn btn-primary">
+                                    🔗 Ver Demo
+                                </a>
+                                <a href="https://github.com/sizaguir/Matem-ticas-Discretas.git" target="_blank"
+                                    class="btn btn-outline">
+                                    💻 Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <!--Video YT-->
-        <section aria-label="Video de presentación">
-            <h2 class="subtitle">Video de presentación</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de YouTube"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+        <!-- SECCIÓN EDUCACIÓN -->
+        <section id="education">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Educación</h2>
+                    <p class="section-subtitle">Mi formación académica y certificaciones profesionales</p>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        🎓 Formación Académica
+                    </h3>
+                    <div class="education-grid">
+                        <article class="card">
+                            <div class="experience-header">
+                                <h4 style="font-size: 1.25rem; font-weight: bold; color: var(--primary);">
+                                    Bachillerato en Ciencias
+                                </h4>
+                                <p class="period">📅 2008 - 2022</p>
+                            </div>
+                            <p style="font-weight: 600; color: rgba(31, 41, 55, 0.8); margin-bottom: 0.5rem;">
+                                Unidad Educativa Particular "De La Providencia"
+                            </p>
+                            <p style="color: rgba(31, 41, 55, 0.7);">
+                                Estudios de escuela y colegio con Bachillerato en Ciencias.
+                            </p>
+                        </article>
+
+                        <article class="card">
+                            <div class="experience-header">
+                                <h4 style="font-size: 1.25rem; font-weight: bold; color: var(--primary);">
+                                    Ingeniería en Ciencias de la Computación
+                                </h4>
+                                <p class="period">📅 2022 - present</p>
+                            </div>
+                            <p style="font-weight: 600; color: rgba(31, 41, 55, 0.8); margin-bottom: 0.5rem;">
+                                Escuela Superior Politécnica del Litoral - ESPOL
+                            </p>
+                            <p style="color: rgba(31, 41, 55, 0.7);">
+                                Fundamentos de programación, estructuras de datos, algoritmos, bases de datos y
+                                desarrollo
+                                de software
+                            </p>
+                        </article>
+                    </div>
+
+                    <h3 style="margin: 2rem 0 1.5rem;">Certificaciones Profesionales</h3>
+                    <div class="card certifications-card">
+                        <div class="cert-grid">
+                            <div class="cert-item">
+                                <div class="cert-dot"></div>
+                                <span style="font-weight: 500;">AWS Certified Solutions Architect</span>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-dot"></div>
+                                <span style="font-weight: 500;">Google Professional Cloud Developer</span>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-dot"></div>
+                                <span style="font-weight: 500;">MongoDB Certified Developer</span>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-dot"></div>
+                                <span style="font-weight: 500;">Scrum Master Certified (SMC)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Resto del sitio (ejemplo) -->
-        <section id="sobre-mi">
-            <h2 class="subtitle">Sobre mí</h2>
-            <p>Descripción breve sobre tu experiencia, habilidades y carrera.</p>
+        <!-- SECCIÓN HABILIDADES -->
+        <section id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Habilidades Blandas</h2>
+                </div>
+
+                <div class="card soft-skills-card">
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-dot"></div>
+                            <span style="font-weight: 500;">Trabajo en Equipo</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-dot"></div>
+                            <span style="font-weight: 500;">Comunicación Efectiva</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-dot"></div>
+                            <span style="font-weight: 500;">Resolución de Problemas</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-dot"></div>
+                            <span style="font-weight: 500;">Liderazgo</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-dot"></div>
+                            <span style="font-weight: 500;">Pensamiento Crítico</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-dot"></div>
+                            <span style="font-weight: 500;">Adaptabilidad</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-dot"></div>
+                            <span style="font-weight: 500;">Gestión del Tiempo</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-dot"></div>
+                            <span style="font-weight: 500;">Aprendizaje Continuo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia</h2>
-            <p>Detalles sobre tu historial laboral, roles anteriores, y logros clave.</p>
+        <!-- SECCIÓN TESTIMONIOS -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Testimonios</h2>
+                    <p class="section-subtitle">Lo que dicen las personas con las que he trabajado</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <article class="card testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <blockquote>
+                            <p class="testimonial-quote">
+                                Sofía siempre demuestra compromiso y dedicación en los trabajos en grupo.
+                            </p>
+                            <div class="testimonial-author">
+                                <p class="author-name">Shirley Aragon</p>
+                                <p class="author-position">Estudiante de Computación de la ESPOL</p>
+                                <p class="author-description">
+                                    Le gusta entender a fondo los temas antes de aplicarlos, y eso ayuda a que el equipo
+                                    trabaje con una base sólida. Además, organiza muy bien las tareas y busca que todos
+                                    comprendamos lo que hacemos.
+                                </p>
+                            </div>
+                        </blockquote>
+                    </article>
+
+                    <article class="card testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <blockquote>
+                            <p class="testimonial-quote">
+                                Es responsable, analítica y muestra gran interés por aprender.
+                            </p>
+                            <div class="testimonial-author">
+                                <p class="author-name">Carlos Rodríguez</p>
+                                <p class="author-position">Profesor de la ESPOL</p>
+                                <p class="author-description">
+                                    Es una estudiante responsable y analítica, con buena disposición para aprender y
+                                    mejorar. Sus entregas son claras, bien justificadas y muestran interés por conectar
+                                    la teoría con la práctica, algo que es muy valioso en el campo de la Computación
+                                </p>
+                            </div>
+                        </blockquote>
+                    </article>
+
+                    <article class="card testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <blockquote>
+                            <p class="testimonial-quote">
+                                Se caracteriza por su perseverancia y actitud colaborativa.
+                            </p>
+                            <div class="testimonial-author">
+                                <p class="author-name">Ana Martínez</p>
+                                <p class="author-position">Estudiante de Computación de la ESPOL</p>
+                                <p class="author-description">
+                                    Destaca por su paciencia y capacidad para resolver problemas. Cuando algo no
+                                    funciona, no se rinde fácilmente: prueba distintas soluciones hasta lograrlo, y
+                                    además comparte sus conocimientos con los demás de manera amable
+                                </p>
+                            </div>
+                        </blockquote>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="contacto">
-            <h2 class="subtitle">Contacto</h2>
-            <p>Información para contactar contigo.</p>
-        </section>
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contacto</h2>
+                    <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+                </div>
 
-        <!--Formulario-->
-        <section aria-label="Formulario de contacto">
-            <h2 class="subtitle">Contáctame</h2>
+                <div class="contact-grid">
+                    <div class="contact-cards">
+                        <article class="card contact-card">
+                            <div class="contact-card-content">
+                                <div class="contact-icon">✉️</div>
+                                <div>
+                                    <h3 style="font-weight: bold; font-size: 1.125rem; color: var(--primary);">Email
+                                    </h3>
+                                    <a href="mailto:tu@email.com">spizagui@espol.edu.ec</a>
+                                </div>
+                            </div>
+                        </article>
 
-            <form action="/enviar-formulario" method="post">
+                        <article class="card contact-card">
+                            <div class="contact-card-content">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <h3 style="font-weight: bold; font-size: 1.125rem; color: var(--primary);">Ubicación
+                                    </h3>
+                                    <p style="color: var(--muted);">Guayaquil, Ecuador</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
 
-                <!-- Campo de texto en una línea -->
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <!-- Lista desplegable -->
-                <label for="pais">País:</label>
-                <select id="pais" name="pais">
-                    <option value="ec">Ecuador</option>
-                    <option value="mx">México</option>
-                    <option value="ar">Argentina</option>
-                    <option value="co">Colombia</option>
-                    <option value="es">España</option>
-                </select>
-
-                <!-- Opciones de selección única (radio) -->
-                <fieldset>
-                    <legend>¿Cómo prefieres ser contactado?</legend>
-                    <label><input type="radio" name="contacto" value="email" checked> Correo electrónico</label>
-                    <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
-                    <label><input type="radio" name="contacto" value="whatsapp"> WhatsApp</label>
-                </fieldset>
-
-                <!-- Valores de selección múltiple (checkbox) -->
-                <fieldset>
-                    <legend>Áreas de interés</legend>
-                    <label><input type="checkbox" name="intereses" value="frontend"> Frontend</label>
-                    <label><input type="checkbox" name="intereses" value="backend"> Backend</label>
-                    <label><input type="checkbox" name="intereses" value="uiux"> Diseño UI/UX</label>
-                    <label><input type="checkbox" name="intereses" value="devops"> DevOps</label>
-                </fieldset>
-
-                <!-- Área de texto -->
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
-
-                <!-- Botón de envío -->
-                <button type="submit">Enviar</button>
-
-            </form>
+                    <div class="card">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" required
+                                    placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                📨 Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
-        <p>© Tu Nombre - 2023</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
-        </ul>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-title">Sofía Izaguirre Durán </p>
+                    <p class="footer-subtitle">Estudiante de ESPOL</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/sizaguir" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            width="40" style="vertical-align:baseline; filter: invert(1);">
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/sofía-izaguirre-durán-7343b8252" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                            width="40" style="vertical-align:baseline;">
+
+                    </a>                    
+                    
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> Sofía Izaguirre Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Actualizar año actual en el footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Manejar scroll del header
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.remove('transparent');
+            } else {
+                header.classList.add('transparent');
+            }
+        });
+
+        // Manejar envío del formulario
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('¡Mensaje enviado! Me pondré en contacto contigo pronto.');
+            contactForm.reset();
+        });
+
+        // Cerrar menú móvil al hacer clic en un enlace
+        const navLinks = document.querySelectorAll('#nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Aquí podrías agregar lógica para cerrar el menú móvil si lo implementas
+            });
+        });
+    </script>
 </body>
 
 </html>
