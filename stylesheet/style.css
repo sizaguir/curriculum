@@ -125,9 +125,17 @@ section {
     margin: 0 auto;
 }
 
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+
 .section-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 .section-subtitle {
@@ -159,11 +167,11 @@ section {
 }
 
 #photo {
-    display: block;    
-    margin: 0 auto;    
+    display: block;
+    margin: 0 auto;
     margin-top: 0px;
     margin-bottom: 1rem;
-    
+
 }
 
 .about-subtitle {
@@ -199,7 +207,7 @@ section {
 .card p {
     margin-bottom: 1rem;
     font-size: 1.125rem;
-    color: rgba(31, 41, 55, 0.9);
+    /*color: rgba(31, 41, 55, 0.9);*/
 }
 
 /* Experience Section */
@@ -298,6 +306,23 @@ section {
     background: var(--accent);
     border-radius: 50%;
     flex-shrink: 0;
+}
+
+table {
+    width: 69vw;    
+    border-collapse: collapse;    
+}
+
+th,
+td {
+    border: 1px solid rgb(206, 201, 201);    
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;    
+    background-color: #e6ecf5;    
 }
 
 /* Skills Section */
@@ -501,7 +526,7 @@ section {
 
 .author-position {
     font-size: 0.875rem;
-    color: var(--accent);
+    color: #76a9b8;
     font-weight: 500;
     margin-bottom: 0.75rem;
 }
@@ -571,28 +596,49 @@ section {
 .form-group {
     display: flex;
     flex-direction: column;
+    ;
 }
 
 .form-group label {
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
+    color: var(--text-dark)
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea .form-group select {
     padding: 0.75rem;
     border: 1px solid var(--border);
     border-radius: 0.5rem;
     font-family: inherit;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    color: var(--text-dark);
+    background-color: white;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.875rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background-color: var(--background);
+    color: var(--text-primary);
+    transition: var(--transition);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent);
+}
+
+.form-group select option[disabled] {
+    color: var(--text-light);
 }
 
 .form-group textarea {
@@ -605,6 +651,7 @@ section {
     padding: 0.75rem;
     cursor: pointer;
 }
+
 
 /* Footer */
 footer {
