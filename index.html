@@ -21,8 +21,9 @@
                     <li><a href="#about">Sobre mí</a></li>
                     <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#education">Educación</a></li>
-                    <li><a href="#skills">Habilidades</a></li>                    
+                    <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#ubicación">Ubicación</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
@@ -57,13 +58,12 @@
                         </div>
 
                         <div class="card">
-                            <h2>Sobre mí</h2>
+                            <h2> Sobre mí</h2>
                             <p>
                                 Soy estudiante de Computación en la Escuela Superior Politécnica del Litoral (ESPOL),
                                 caracterizada por mi responsabilidad, pensamiento analítico y atención al detalle. Me
                                 interesa comprender a fondo los fundamentos detrás de cada tema, desde algoritmos y
                                 estructuras de datos hasta el desarrollo web y proyectos con enfoque social.
-
                             </p>
                         </div>
                 </div>
@@ -81,10 +81,10 @@
                 <div class="projects-grid">
                     <article class="card project-card">
                         <div class="project-image" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
-                            Proyecto Estructuras
+                            Proyecto Estructuras de Datos
                         </div>
                         <div class="project-content">
-                            <h3>Proyecto Estructuras</h3>
+                            <h3>Proyecto Estructuras de Datos</h3>
                             <p class="project-description">
                                 Proyecto que contiene código fuente sobre una aplicación de vuelos de un Aeropuerto, el
                                 cual contene información de aerolineas disponibles y vuelos asignados a cada aerolinea y
@@ -97,11 +97,8 @@
                                 <span class="badge">JavaFXML</span>
                             </div>
                             <div class="project-buttons">
-                                <a href="https://example.com" target="_blank" class="btn btn-primary">
-                                    🔗 Ver Demo
-                                </a>
                                 <a href="https://github.com/sizaguir/ProyectoEstructuras.git" target="_blank"
-                                    class="btn btn-outline">
+                                    class="btn btn-primary" class="btn btn-outline">
                                     💻 Código
                                 </a>
                             </div>
@@ -125,11 +122,8 @@
                                 <span class="badge">MySQL</span>
                             </div>
                             <div class="project-buttons">
-                                <a href="https://example.com" target="_blank" class="btn btn-primary">
-                                    🔗 Ver Demo
-                                </a>
                                 <a href="https://github.com/sizaguir/ProyectoBasedeDatos.git" target="_blank"
-                                    class="btn btn-outline">
+                                    class="btn btn-primary" class="btn btn-outline">
                                     💻 Código
                                 </a>
                             </div>
@@ -151,16 +145,22 @@
                                 <span class="badge">Python/span>
                             </div>
                             <div class="project-buttons">
-                                <a href="https://example.com" target="_blank" class="btn btn-primary">
-                                    🔗 Ver Demo
-                                </a>
                                 <a href="https://github.com/sizaguir/Matem-ticas-Discretas.git" target="_blank"
-                                    class="btn btn-outline">
+                                    class="btn btn-primary" class="btn btn-outline">
                                     💻 Código
                                 </a>
                             </div>
                         </div>
                     </article>
+                </div>
+
+                <div class="card">
+                    Para conocer más sobre mis proyectos, visita mi portafolio en
+                    <a href="https://github.com/sizaguir" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                    </p>
+                    </p>
                 </div>
             </div>
         </section>
@@ -170,7 +170,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Educación</h2>
-                    <p class="section-subtitle">Mi formación académica y certificaciones profesionales</p>
+                    <p class="section-subtitle">Mi formación académica</p>
                 </div>
 
                 <div>
@@ -210,199 +210,317 @@
                             </p>
                         </article>
                     </div>
-
-                    <h3 style="margin: 2rem 0 1.5rem;">Certificaciones Profesionales</h3>
+                    <h3 style="margin: 2rem 0 1.5rem;">Certificados</h3>
                     <div class="card certifications-card">
                         <div class="cert-grid">
-                            <div class="cert-item">
-                                <div class="cert-dot"></div>
-                                <span style="font-weight: 500;">AWS Certified Solutions Architect</span>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-dot"></div>
-                                <span style="font-weight: 500;">Google Professional Cloud Developer</span>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-dot"></div>
-                                <span style="font-weight: 500;">MongoDB Certified Developer</span>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-dot"></div>
-                                <span style="font-weight: 500;">Scrum Master Certified (SMC)</span>
-                            </div>
+                            <section id="certificaciones">
+                                <div class="container">
+
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Certificados</th>
+                                                <th>Año</th>
+                                                <th>Plataforma</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Fotografía de retrato para redes sociales</th>
+                                                <td>mar 2023</td>
+                                                <td>LinkedIn Learning</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Intermediate SQL</th>
+                                                <td>jan 2024</td>
+                                                <td>datacamp</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Introduction to Python</th>
+                                                <td>mar 2024</td>
+                                                <td>datacamp</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Intermediate Python</th>
+                                                <td>mar 2024</td>
+                                                <td>datacamp</td>
+                                            </tr>                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- SECCIÓN HABILIDADES -->
-        <section id="skills">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Habilidades Blandas</h2>
-                </div>
-
-                <div class="card soft-skills-card">
-                    <div class="soft-skills-grid">
-                        <div class="soft-skill-item">
-                            <div class="soft-skill-dot"></div>
-                            <span style="font-weight: 500;">Trabajo en Equipo</span>
-                        </div>
-                        <div class="soft-skill-item">
-                            <div class="soft-skill-dot"></div>
-                            <span style="font-weight: 500;">Comunicación Efectiva</span>
-                        </div>
-                        <div class="soft-skill-item">
-                            <div class="soft-skill-dot"></div>
-                            <span style="font-weight: 500;">Resolución de Problemas</span>
-                        </div>
-                        <div class="soft-skill-item">
-                            <div class="soft-skill-dot"></div>
-                            <span style="font-weight: 500;">Liderazgo</span>
-                        </div>
-                        <div class="soft-skill-item">
-                            <div class="soft-skill-dot"></div>
-                            <span style="font-weight: 500;">Pensamiento Crítico</span>
-                        </div>
-                        <div class="soft-skill-item">
-                            <div class="soft-skill-dot"></div>
-                            <span style="font-weight: 500;">Adaptabilidad</span>
-                        </div>
-                        <div class="soft-skill-item">
-                            <div class="soft-skill-dot"></div>
-                            <span style="font-weight: 500;">Gestión del Tiempo</span>
-                        </div>
-                        <div class="soft-skill-item">
-                            <div class="soft-skill-dot"></div>
-                            <span style="font-weight: 500;">Aprendizaje Continuo</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN TESTIMONIOS -->
-        <section id="testimonials">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Testimonios</h2>
-                    <p class="section-subtitle">Lo que dicen las personas con las que he trabajado</p>
-                </div>
-
-                <div class="testimonials-grid">
-                    <article class="card testimonial-card">
-                        <div class="quote-icon">"</div>
-                        <blockquote>
-                            <p class="testimonial-quote">
-                                Sofía siempre demuestra compromiso y dedicación en los trabajos en grupo.
-                            </p>
-                            <div class="testimonial-author">
-                                <p class="author-name">Shirley Aragon</p>
-                                <p class="author-position">Estudiante de Computación de la ESPOL</p>
-                                <p class="author-description">
-                                    Le gusta entender a fondo los temas antes de aplicarlos, y eso ayuda a que el equipo
-                                    trabaje con una base sólida. Además, organiza muy bien las tareas y busca que todos
-                                    comprendamos lo que hacemos.
-                                </p>
+                    <!-- SECCIÓN HABILIDADES -->
+                    <section id="skills">
+                        <div class="container">
+                            <div class="section-header">
+                                <h2>Habilidades Blandas</h2>
                             </div>
-                        </blockquote>
-                    </article>
 
-                    <article class="card testimonial-card">
-                        <div class="quote-icon">"</div>
-                        <blockquote>
-                            <p class="testimonial-quote">
-                                Es responsable, analítica y muestra gran interés por aprender.
-                            </p>
-                            <div class="testimonial-author">
-                                <p class="author-name">Carlos Rodríguez</p>
-                                <p class="author-position">Profesor de la ESPOL</p>
-                                <p class="author-description">
-                                    Es una estudiante responsable y analítica, con buena disposición para aprender y
-                                    mejorar. Sus entregas son claras, bien justificadas y muestran interés por conectar
-                                    la teoría con la práctica, algo que es muy valioso en el campo de la Computación
-                                </p>
-                            </div>
-                        </blockquote>
-                    </article>
-
-                    <article class="card testimonial-card">
-                        <div class="quote-icon">"</div>
-                        <blockquote>
-                            <p class="testimonial-quote">
-                                Se caracteriza por su perseverancia y actitud colaborativa.
-                            </p>
-                            <div class="testimonial-author">
-                                <p class="author-name">Ana Martínez</p>
-                                <p class="author-position">Estudiante de Computación de la ESPOL</p>
-                                <p class="author-description">
-                                    Destaca por su paciencia y capacidad para resolver problemas. Cuando algo no
-                                    funciona, no se rinde fácilmente: prueba distintas soluciones hasta lograrlo, y
-                                    además comparte sus conocimientos con los demás de manera amable
-                                </p>
-                            </div>
-                        </blockquote>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN CONTACTO -->
-        <section id="contact">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Contacto</h2>
-                    <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
-                </div>
-
-                <div class="contact-grid">
-                    <div class="contact-cards">
-                        <article class="card contact-card">
-                            <div class="contact-card-content">
-                                <div class="contact-icon">✉️</div>
-                                <div>
-                                    <h3 style="font-weight: bold; font-size: 1.125rem; color: var(--primary);">Email
-                                    </h3>
-                                    <a href="mailto:tu@email.com">spizagui@espol.edu.ec</a>
+                            <div class="card soft-skills-card">
+                                <div class="soft-skills-grid">
+                                    <div class="soft-skill-item">
+                                        <div class="soft-skill-dot"></div>
+                                        <span style="font-weight: 500;">Trabajo en Equipo</span>
+                                    </div>
+                                    <div class="soft-skill-item">
+                                        <div class="soft-skill-dot"></div>
+                                        <span style="font-weight: 500;">Comunicación Efectiva</span>
+                                    </div>
+                                    <div class="soft-skill-item">
+                                        <div class="soft-skill-dot"></div>
+                                        <span style="font-weight: 500;">Resolución de Problemas</span>
+                                    </div>
+                                    <div class="soft-skill-item">
+                                        <div class="soft-skill-dot"></div>
+                                        <span style="font-weight: 500;">Liderazgo</span>
+                                    </div>
+                                    <div class="soft-skill-item">
+                                        <div class="soft-skill-dot"></div>
+                                        <span style="font-weight: 500;">Pensamiento Crítico</span>
+                                    </div>
+                                    <div class="soft-skill-item">
+                                        <div class="soft-skill-dot"></div>
+                                        <span style="font-weight: 500;">Adaptabilidad</span>
+                                    </div>
+                                    <div class="soft-skill-item">
+                                        <div class="soft-skill-dot"></div>
+                                        <span style="font-weight: 500;">Gestión del Tiempo</span>
+                                    </div>
+                                    <div class="soft-skill-item">
+                                        <div class="soft-skill-dot"></div>
+                                        <span style="font-weight: 500;">Aprendizaje Continuo</span>
+                                    </div>
                                 </div>
                             </div>
-                        </article>
+                        </div>
+                    </section>
 
-                        <article class="card contact-card">
-                            <div class="contact-card-content">
-                                <div class="contact-icon">📍</div>
-                                <div>
-                                    <h3 style="font-weight: bold; font-size: 1.125rem; color: var(--primary);">Ubicación
-                                    </h3>
-                                    <p style="color: var(--muted);">Guayaquil, Ecuador</p>
+                    <!-- SECCIÓN TESTIMONIOS -->
+                    <section id="testimonials">
+                        <div class="container">
+                            <div class="section-header">
+                                <h2>Testimonios</h2>
+                                <p class="section-subtitle">Lo que dicen las personas con las que he
+                                    trabajado</p>
+                            </div>
+
+                            <div class="testimonials-grid">
+                                <article class="card testimonial-card">
+                                    <div class="quote-icon">"</div>
+                                    <blockquote>
+                                        <p class="testimonial-quote">
+                                            "Sofía siempre demuestra compromiso y dedicación en los
+                                            trabajos en grupo."
+                                        </p>
+                                        <div class="testimonial-author">
+                                            <p class="author-name">Shirley Aragon</p>
+                                            <p class="author-position">Estudiante de Computación de la
+                                                ESPOL</p>
+                                            <p class="author-description">
+                                                Le gusta entender a fondo los temas antes de aplicarlos,
+                                                y eso ayuda a que el equipo
+                                                trabaje con una base sólida. Además, organiza muy bien
+                                                las tareas y busca que todos
+                                                comprendamos lo que hacemos.
+                                            </p>
+                                        </div>
+                                    </blockquote>
+                                </article>
+
+                                <article class="card testimonial-card">
+                                    <div class="quote-icon">"</div>
+                                    <blockquote>
+                                        <p class="testimonial-quote">
+                                            "Es responsable, analítica y muestra gran interés por
+                                            aprender."
+                                        </p>
+                                        <div class="testimonial-author">
+                                            <p class="author-name">Carlos Rodríguez</p>
+                                            <p class="author-position">Profesor de la ESPOL</p>
+                                            <p class="author-description">
+                                                Es una estudiante responsable y analítica, con buena
+                                                disposición para aprender y
+                                                mejorar. Sus entregas son claras, bien justificadas y
+                                                muestran interés por conectar
+                                                la teoría con la práctica, algo que es muy valioso en el
+                                                campo de la Computación
+                                            </p>
+                                        </div>
+                                    </blockquote>
+                                </article>
+
+                                <article class="card testimonial-card">
+                                    <div class="quote-icon">"</div>
+                                    <blockquote>
+                                        <p class="testimonial-quote">
+                                            "Se caracteriza por su perseverancia y actitud
+                                            colaborativa."
+                                        </p>
+                                        <div class="testimonial-author">
+                                            <p class="author-name">Ana Martínez</p>
+                                            <p class="author-position">Estudiante de Computación de la
+                                                ESPOL</p>
+                                            <p class="author-description">
+                                                Destaca por su paciencia y capacidad para resolver
+                                                problemas. Cuando algo no
+                                                funciona, no se rinde fácilmente: prueba distintas
+                                                soluciones hasta lograrlo, y
+                                                además comparte sus conocimientos con los demás de
+                                                manera amable
+                                            </p>
+                                        </div>
+                                    </blockquote>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SECCIÓN UBICACION -->
+
+                    <section id="ubicación">
+                        <div class="container">
+                            <div class="section-header">
+                                <h2>Ubicación</h2>
+                                <p class="section-subtitle"></p>
+                            </div>
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6572.359298923056!2d-79.97689068317413!3d-2.144626536280491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e1!3m2!1ses-419!2sec!4v1760329247632!5m2!1ses-419!2sec"
+                                width="100%" height="400" allowfullscreen loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación de ESPOL"></iframe>
+                        </div>
+                    </section>
+
+                    <!-- SECCIÓN VIDEO -->
+
+                    <section id="video">
+                        <div class="video-wrapper">
+                            <section>
+                                <h2>Video de YouTube</h2>
+                                <iframe width="700" height="500"
+                                    src="https://www.youtube.com/embed/lDhOVbR_4Kg?si=5MIlqSLW2XFWmz5Y"
+                                    title="Cómo hacer un currículum si no tienes ninguna experiencia" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    class="video-centrado">
+                                </iframe>
+                            </section>
+                        </div>
+                    </section>
+
+
+
+                    <!-- SECCIÓN CONTACTO -->
+                    <section id="contact">
+                        <div class="container">
+                            <div class="section-header">
+                                <h2>Contacto</h2>
+                                <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+                            </div>
+
+                            <div class="contact-grid">
+                                <div class="contact-cards">
+                                    <article class="card contact-card">
+                                        <div class="contact-card-content">
+                                            <div class="contact-icon">✉️</div>
+                                            <div>
+                                                <h3
+                                                    style="font-weight: bold; font-size: 1.125rem; color: var(--primary);">
+                                                    Email
+                                                </h3>
+                                                <a href="mailto:tu@email.com">spizagui@espol.edu.ec</a>
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <article class="card contact-card">
+                                        <div class="contact-card-content">
+                                            <div class="contact-icon">📍</div>
+                                            <div>
+                                                <h3
+                                                    style="font-weight: bold; font-size: 1.125rem; color: var(--primary);">
+                                                    Ubicación
+                                                </h3>
+                                                <p style="color: var(--muted);">Guayaquil, Ecuador</p>
+                                            </div>
+                                        </div>
+                                    </article>
                                 </div>
-                            </div>
-                        </article>
-                    </div>
 
-                    <div class="card">
-                        <form class="contact-form" id="contact-form">
-                            <div class="form-group">
-                                <label for="name">Nombre</label>
-                                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+
+                                <article class="form-card">
+                                    <form id="contactForm" class="contact-form">
+                                        <div class="form-group">
+                                            <label for="name">Nombre completo</label>
+                                            <input type="text" id="name" name="name" placeholder="Tu nombre" required
+                                                class="form-input">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" name="email" placeholder="tu@email.com"
+                                                required class="form-input">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="service">Tipo de servicio</label>
+                                            <select id="service" name="service" class="form-select" required>
+                                                <option value="">Selecciona un servicio</option>
+                                                <option value="web-development">Desarrollo Web</option>
+                                                <option value="mobile-app">Aplicación Móvil</option>
+                                                <option value="consulting">Consultoría</option>
+                                                <option value="design">Diseño UI/UX</option>
+                                                <option value="other">Otro</option>
+                                            </select>
+                                        </div>
+
+                                        <fieldset class="form-group">
+                                            <legend>Áreas de interés</legend>
+                                            <div class="checkbox-group">
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" id="frontend" name="interests"
+                                                        value="frontend">
+                                                    <label for="frontend">Frontend Development</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" id="backend" name="interests"
+                                                        value="backend">
+                                                    <label for="backend">Backend Development</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" id="database" name="interests"
+                                                        value="database">
+                                                    <label for="database">Diseño de Base de
+                                                        Datos</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" id="cloud" name="interests" value="cloud">
+                                                    <label for="cloud">Cloud & DevOps</label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <div class="form-group">
+                                            <label for="message">Mensaje</label>
+                                            <textarea id="message" name="message"
+                                                placeholder="Cuéntame sobre tu proyecto..." rows="5" required
+                                                class="form-textarea"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary submit-btn">
+                                            📨 Enviar Mensaje
+                                        </button>
+
+
+                                    </form>
+                                </article>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Mensaje</label>
-                                <textarea id="message" name="message" required
-                                    placeholder="Cuéntame sobre tu proyecto..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary submit-btn">
-                                📨 Enviar Mensaje
-                            </button>
-                        </form>
-                    </div>
+
+
+                        </div>
                 </div>
-            </div>
         </section>
     </main>
 
@@ -426,8 +544,8 @@
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                             width="40" style="vertical-align:baseline;">
 
-                    </a>                    
-                    
+                    </a>
+
                 </div>
             </div>
 
